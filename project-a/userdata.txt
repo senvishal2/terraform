@@ -1,0 +1,6 @@
+#!/bin/bash
+sudo apt-get -y update
+apt install apache2 -y
+systemctl start apache2
+echo "Server is online." > /var/www/html/index.html
+systemctl restart apache2
